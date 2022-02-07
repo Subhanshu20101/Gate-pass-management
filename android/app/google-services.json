@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "387854406703",
+    "project_id": "gate-pass-ddcb4",
+    "storage_bucket": "gate-pass-ddcb4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:387854406703:android:c125b5407db8894ba5a2da",
+        "android_client_info": {
+          "package_name": "com.example.flutter_application_1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "387854406703-j7l37bc753bpq01gdedhfqn6nn66fi4v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCFGPw8D7RNtxoRGoSb5_sfOlszFp81PE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "387854406703-j7l37bc753bpq01gdedhfqn6nn66fi4v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

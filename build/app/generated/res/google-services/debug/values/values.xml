@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">387854406703-j7l37bc753bpq01gdedhfqn6nn66fi4v.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">387854406703</string>
+    <string name="google_api_key" translatable="false">AIzaSyCCFGPw8D7RNtxoRGoSb5_sfOlszFp81PE</string>
+    <string name="google_app_id" translatable="false">1:387854406703:android:c125b5407db8894ba5a2da</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCCFGPw8D7RNtxoRGoSb5_sfOlszFp81PE</string>
+    <string name="google_storage_bucket" translatable="false">gate-pass-ddcb4.appspot.com</string>
+    <string name="project_id" translatable="false">gate-pass-ddcb4</string>
+</resources>
