@@ -9,6 +9,8 @@ import 'package:flutter_application_1/Pages/not.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_application_1/utils/routes.dart';
 
+import 'Pages/login_page_admin.dart';
+
 Future main(List<String> args) async{
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
@@ -45,6 +47,7 @@ class MyApp extends StatelessWidget {
               MyRoutes.submittedRoute: (context) => const SubmittedPage(),
               MyRoutes.registerRoute: (context) => const RegisterPage(),
               MyRoutes.notRoute: (context) => const NotPage(),
+              MyRoutes.loginadminRoute: (context) => const LoginAdminPage(),
             },
           );
         }

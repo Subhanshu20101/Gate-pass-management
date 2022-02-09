@@ -20,6 +20,7 @@ class _FormPageState extends State<FormPage> {
   var timeOut = "";
   var parentsPhone = "";
   var personalPhone = "";
+  
 
   final nameController = TextEditingController();
   final enrollNoController = TextEditingController();
@@ -50,16 +51,21 @@ class _FormPageState extends State<FormPage> {
   CollectionReference students =
       FirebaseFirestore.instance.collection('students');
 
-  Future<void> addUser() {
+  Future<void> updateUser() {
+    String status= "out";
     return students
-        .add({
+        .doc(widget.id)
+        .update({
           'name': name,
           'enrollNo': enrollNo,
           'timeOut': timeOut,
           'parentsPhone': parentsPhone,
-          'personalPhone': personalPhone
-        })
-        .then((value) => print('Entry added'))
+          'personalPhone': personalPhone,
+          'status': status
+        },
+        
+        )
+        .then((value) => print('User updated added'))
         .catchError((error) => print('Failed to Add user: $error'));
   }
 
@@ -191,7 +197,7 @@ class _FormPageState extends State<FormPage> {
                             timeOut = timeOutController.text;
                             parentsPhone = parentsPhoneController.text;
                             personalPhone = personalPhoneController.text;
-                            addUser();
+                            updateUser();
                             clearText();
                           });
                         }

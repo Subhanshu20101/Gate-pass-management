@@ -109,7 +109,7 @@ class _AskPageState extends State<AskPage> {
                             BorderRadius.circular(changeButton ? 50 : 8),
                         child: InkWell(
                           onTap: () {
-                            Navigator.pushNamed(context, MyRoutes.loginRoute);
+                            Navigator.pushNamed(context, MyRoutes.loginadminRoute);
                           },
                           child: AnimatedContainer(
                             duration: Duration(seconds: 1),

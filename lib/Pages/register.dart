@@ -38,7 +38,17 @@ class _RegisterPageState extends State<RegisterPage> {
 
   Future<void> addUser() {
     return students
-        .add({'username': username, 'password': password})
+    .doc(username)
+        .set({
+          'username': username, 
+          'password': password,
+          'name': "",
+          'enrollNo': "",
+          'timeOut': "",
+          'parentsPhone': "",
+          'personalPhone': "",
+          'status': ""
+          })
         .then((value) => print("User added"))
         .catchError((error) => print('Failed to Add user: $error'));
   }
@@ -50,7 +60,7 @@ class _RegisterPageState extends State<RegisterPage> {
       changeButton = true;
     });
     await Future.delayed(Duration(seconds: 1));
-    await Navigator.pushNamed(context, MyRoutes.formRoute);
+    await Navigator.pushNamed(context, MyRoutes.loginRoute);
     setState(() {
       changeButton = false;
     });

@@ -7,4 +7,6 @@ class MyRoutes {
   static String submittedRoute = "/submitted";
   static String registerRoute = "/register";
   static String notRoute = "/not";
+  static String loginadminRoute = "/loginadmin";
+  
 }
