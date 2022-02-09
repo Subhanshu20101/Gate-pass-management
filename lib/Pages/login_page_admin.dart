@@ -146,28 +146,34 @@ class _LoginAdminPageState extends State<LoginAdminPage> {
                                     username = usernameController.text;
                                     password = passwordController.text;
                                   }
-                                  bool b = false;
-                                  bool y = false;
-                                  var i;
-                                  for (i = 0; i < storedocs.length; i++) {
-                                    if (storedocs[i]['username'] == username &&
-                                        storedocs[i]['password'] == password) {
-                                      b = true;
-                                      break;
-                                    }
-                                  }
+                                  // bool b = false;
+                                  // bool y = false;
+                                  // var i;
+                                  // for (i = 0; i < storedocs.length; i++) {
+                                  //   if (storedocs[i]['username'] == username &&
+                                  //       storedocs[i]['password'] == password) {
+                                  //     b = true;
+                                  //     break;
+                                  //   }
+                                  // }
                                   if (username == "appadmin" &&
                                       password == "123456") {
-                                    y = true;
-                                  }
-                                  if ( y==true) {
                                     Navigator.push(
                                         context,
                                         MaterialPageRoute(
                                           builder: (context) =>
                                               ListStudentPage(),
                                         ));
-                                  } else {
+                                  }
+                                  // if ( y==true) {
+                                  //   Navigator.push(
+                                  //       context,
+                                  //       MaterialPageRoute(
+                                  //         builder: (context) =>
+                                  //             ListStudentPage(),
+                                  //       ));
+                                  // }
+                                   else {
                                     Navigator.pushNamed(
                                         context, MyRoutes.notRoute);
                                   }

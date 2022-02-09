@@ -66,7 +66,7 @@ class _FormPageState extends State<FormPage> {
         
         )
         .then((value) => print('User updated added'))
-        .catchError((error) => print('Failed to Add user: $error'));
+        .catchError((error) => print('Failed to Add user'));
   }
 
   @override

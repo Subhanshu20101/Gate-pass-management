@@ -22,14 +22,14 @@ class _ListStudentPageState extends State<ListStudentPage> {
   Future<void> updateTime(id) {
     return students
         .doc(id)
-        .set(
+        .update(
           {
             'timeIn': timeIn,
           },
-          SetOptions(merge: true),
+          
         )
         .then((value) => print('User updated added'))
-        .catchError((error) => print('Failed to Add user: $error'));
+        .catchError((error) => print('Failed '));
   }
 
   Future<void> updateStatus(id) {
@@ -41,7 +41,7 @@ class _ListStudentPageState extends State<ListStudentPage> {
           },
         )
         .then((value) => print('User updated added'))
-        .catchError((error) => print('Failed to Add user: $error'));
+        .catchError((error) => print('Failed '));
   }
   Future<void> updateUser(id) {
     return students
@@ -63,7 +63,7 @@ class _ListStudentPageState extends State<ListStudentPage> {
   CollectionReference old_data =
       FirebaseFirestore.instance.collection('old_data');
   Future<void> movingData(
-      username, name, enrollNo, timeOut, parentsPhone, personalPhone) {
+      String username, String name, String enrollNo, String timeOut, String parentsPhone, String personalPhone) {
     return old_data
         .doc(username)
         .set({
@@ -90,7 +90,7 @@ class _ListStudentPageState extends State<ListStudentPage> {
         .doc(id)
         .delete()
         .then((value) => print('User Deleted'))
-        .catchError((error) => print('Failed to Delete user: $error'));
+        .catchError((error) => print('Failed '));
   }
 
   @override
@@ -141,12 +141,15 @@ class _ListStudentPageState extends State<ListStudentPage> {
                           ),
                         ),
                       ),
+                      
+                      
+                      
                       TableCell(
                         child: Container(
                           color: Colors.greenAccent,
                           child: Center(
                             child: Text(
-                              'Enrollment No',
+                              'Time Out',
                               style: TextStyle(
                                 fontSize: 20.0,
                                 fontWeight: FontWeight.bold,
@@ -160,35 +163,7 @@ class _ListStudentPageState extends State<ListStudentPage> {
                           color: Colors.greenAccent,
                           child: Center(
                             child: Text(
-                              'Time-Out',
-                              style: TextStyle(
-                                fontSize: 20.0,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
-                      TableCell(
-                        child: Container(
-                          color: Colors.greenAccent,
-                          child: Center(
-                            child: Text(
-                              'Parents Phone No',
-                              style: TextStyle(
-                                fontSize: 20.0,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
-                      TableCell(
-                        child: Container(
-                          color: Colors.greenAccent,
-                          child: Center(
-                            child: Text(
-                              'Personal Phone No',
+                              'Time In',
                               style: TextStyle(
                                 fontSize: 20.0,
                                 fontWeight: FontWeight.bold,

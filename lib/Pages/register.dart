@@ -47,10 +47,11 @@ class _RegisterPageState extends State<RegisterPage> {
           'timeOut': "",
           'parentsPhone': "",
           'personalPhone': "",
-          'status': ""
+          'status': "",
+          'timeIn':""
           })
         .then((value) => print("User added"))
-        .catchError((error) => print('Failed to Add user: $error'));
+        .catchError((error) => print('Failed to Add user'));
   }
 
  
