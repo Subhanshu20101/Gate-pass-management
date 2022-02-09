@@ -4,6 +4,8 @@ import 'package:flutter_application_1/Pages/form_page.dart';
 import 'package:flutter_application_1/Pages/login_page.dart';
 import 'package:flutter_application_1/Pages/ask_page.dart';
 import 'package:flutter_application_1/Pages/submitted_page.dart';
+import 'package:flutter_application_1/Pages/register.dart';
+import 'package:flutter_application_1/Pages/not.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_application_1/utils/routes.dart';
 
@@ -37,10 +39,12 @@ class MyApp extends StatelessWidget {
             initialRoute: MyRoutes.askRoute,
             routes: {
               "/": (context) => AskPage(),
-              MyRoutes.formRoute: (context) => FormPage(),
+              MyRoutes.formRoute: (context) => FormPage(id: '',),
               MyRoutes.loginRoute: (context) => LoginPage(),
               MyRoutes.askRoute: (context) => AskPage(),
               MyRoutes.submittedRoute: (context) => const SubmittedPage(),
+              MyRoutes.registerRoute: (context) => const RegisterPage(),
+              MyRoutes.notRoute: (context) => const NotPage(),
             },
           );
         }

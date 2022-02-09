@@ -67,6 +67,12 @@ androidx/annotation/XmlRes.class
 androidx/annotation/experimental/Experimental$Level.class
 androidx/annotation/experimental/Experimental.class
 androidx/annotation/experimental/UseExperimental.class
+androidx/browser/browseractions/BrowserActionsIntent$BrowserActionsItemId.class
+androidx/browser/browseractions/BrowserActionsIntent$BrowserActionsUrlType.class
+androidx/browser/customtabs/CustomTabsService$Relation.class
+androidx/browser/customtabs/CustomTabsService$Result.class
+androidx/coordinatorlayout/widget/CoordinatorLayout$DefaultBehavior.class
+androidx/coordinatorlayout/widget/CoordinatorLayout$DispatchChangeEvent.class
 androidx/core/app/CoreComponentFactory$CompatWrapped.class
 androidx/core/app/CoreComponentFactory.class
 androidx/core/app/FrameMetricsAggregator$MetricType.class
@@ -117,12 +123,14 @@ androidx/multidex/MultiDexExtractor$ExtractedDex.class
 androidx/multidex/MultiDexExtractor.class
 androidx/multidex/ZipUtil$CentralDirectory.class
 androidx/multidex/ZipUtil.class
+androidx/swiperefreshlayout/widget/CircularProgressDrawable$ProgressDrawableSize.class
 androidx/versionedparcelable/NonParcelField.class
 androidx/versionedparcelable/ParcelField.class
 androidx/versionedparcelable/VersionedParcelize.class
 androidx/viewpager/widget/ViewPager$DecorView.class
 androidx/window/core/ExperimentalWindowApi.class
 androidx/window/embedding/SplitRule$LayoutDir.class
+com/google/android/gms/auth/api/phone/SmsCodeAutofillClient$PermissionState.class
 com/google/android/gms/common/SignInButton$ButtonSize.class
 com/google/android/gms/common/SignInButton$ColorScheme.class
 com/google/android/gms/common/annotation/KeepForSdk.class
@@ -200,6 +208,8 @@ com/google/errorprone/annotations/concurrent/LockMethod.class
 com/google/errorprone/annotations/concurrent/UnlockMethod.class
 com/google/firebase/annotations/DeferredApi.class
 com/google/firebase/annotations/PublicApi.class
+com/google/firebase/auth/ActionCodeResult$ActionDataKey.class
+com/google/firebase/auth/ActionCodeResult$Operation.class
 com/google/firebase/firestore/DocumentId.class
 com/google/firebase/firestore/Exclude.class
 com/google/firebase/firestore/IgnoreExtraProperties.class

@@ -4,7 +4,9 @@ import 'package:flutter_application_1/Pages/submitted_page.dart';
 import 'package:flutter_application_1/utils/routes.dart';
 
 class FormPage extends StatefulWidget {
-  FormPage({Key? key}) : super(key: key);
+  final String id;
+
+  FormPage({Key? key,required this.id}) : super(key: key);
 
   @override
   _FormPageState createState() => _FormPageState();
@@ -56,8 +58,6 @@ class _FormPageState extends State<FormPage> {
           'timeOut': timeOut,
           'parentsPhone': parentsPhone,
           'personalPhone': personalPhone
-
-          
         })
         .then((value) => print('Entry added'))
         .catchError((error) => print('Failed to Add user: $error'));
