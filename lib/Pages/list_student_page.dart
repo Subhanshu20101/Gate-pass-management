@@ -188,7 +188,7 @@ class _ListStudentPageState extends State<ListStudentPage> {
                       ),
                     ],
                   ),
-                  for (var i = 0; i < storedocs.length; i++) ...[
+                  for (var i = 1; i < storedocs.length; i++) ...[
                     TableRow(
                       children: [
                         TableCell(
